@@ -1,12 +1,18 @@
-INSERT INTO candidates (first_name, last_name, industry_connected)
+INSERT INTO parties (name, description)
 VALUES
-    ('Ronald', 'Firbank', 1),
-    ('Virginia', 'Woolf', 1),
-    ('Piers', 'Gaveston', 0),
-    ('Charles', 'LeRoi', 1),
-    ('Katherine', 'Mansfield', 1),
-    ('Dora', 'Carrington', 0),
-    ('Edward', 'Bellamy', 0),
-    ('Montague', 'Summers', 1),
-    ('Octavia', 'Butler', 1),
-    ('Unica', 'Zurn', 1);
+    ('JS Juggernauts', 'The JS Juggernauts eat, breathe and sleep Javascript.'),
+    ('Heroes of HTML', 'Can bring you your mockup back as a webpage in seconds.'),
+    ('Git Gurus', 'Nobody knows Git like these Guys.');
+
+INSERT INTO candidates (first_name, last_name, party_id, industry_connected)
+VALUES
+    ('Ronald', 'Firbank', 1, 1),
+    ('Virginia', 'Woolf', 1, 1),
+    ('Piers', 'Gaveston', 1, 0),
+    ('Charles', 'LeRoi', 2, 1),
+    ('Katherine', 'Mansfield', 2, 1),
+    ('Dora', 'Carrington', 3, 0),
+    ('Edward', 'Bellamy', 3, 0),
+    ('Montague', 'Summers', 3, 1),
+    ('Octavia', 'Butler', 3, 1),
+    ('Unica', 'Zurn', NULL, 1);
