@@ -1,6 +1,8 @@
 const express = require('express');
 const db = require('./db/connection');
+const router = require('./routes/apiRoutes');
 const apiRoutes = require('./routes/apiRoutes');
+router.use(require('./routes/voterRoutes'));
 
 // add PORT designation and app expression
 const PORT = process.env.PORT || 3001;
